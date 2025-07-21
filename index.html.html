@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Flashing Rainbow Text</title>
+<style>
+  /* Flashing background animation */
+  @keyframes flashBg {
+    0%, 50%, 100% {
+      background-color: black;
+    }
+    25%, 75% {
+      background-color: white;
+    }
+  }
+
+  body {
+    margin: 0;
+    height: 100vh;
+    animation: flashBg 1s infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Rainbow text animation */
+  @keyframes rainbow {
+    0% { color: red; }
+    14% { color: orange; }
+    28% { color: yellow; }
+    42% { color: green; }
+    56% { color: blue; }
+    70% { color: indigo; }
+    84% { color: violet; }
+    100% { color: red; }
+  }
+
+  h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    animation: rainbow 3s linear infinite;
+    text-align: center;
+    user-select: none;
+    font-family: Arial, sans-serif;
+  }
+</style>
+</head>
+<body>
+  <h1>HAHA! YOU REALLY THOUGHT!</h1>
+</body>
+</html>
